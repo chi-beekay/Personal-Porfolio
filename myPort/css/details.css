@@ -1,0 +1,140 @@
+.details {
+    padding: 5rem 1rem 0 1rem;
+}
+
+.detail-header {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: center; */
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 5rem;
+}
+
+.detail-header span {
+    color: gray;
+}
+
+/* .detail-content {} */
+
+.detail-content h3{
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 1.5px;
+    margin-bottom: .5rem;
+    font-weight: 700;
+}
+
+.detail-content p {
+    font-size: .8rem;
+}
+
+.detail-img {
+    border-radius: .5rem;
+    margin: 5rem auto;
+}
+
+.detail-text {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    gap: 1rem;
+    margin-bottom: 5rem;
+}
+
+@media screen and (min-width: 500px) {
+    .details {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .detail-header {
+        font-size: 3rem;
+    }
+
+    .detail-content h3{
+        font-size: 1.2rem;
+    }
+
+    .detail-content p {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 700px) {
+
+    .detail-header {
+        font-size: 3rem;
+    }
+
+    .detail-content h3{
+        font-size: 1.2rem;
+    }
+
+    .detail-content p {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 860px) {
+
+    .detail-container {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 0;
+    }
+
+    .detail-header {
+        font-size: 3rem;
+    }
+
+    .detail-content h3{
+        font-size: 1.5rem;
+    }
+
+    .detail-content p {
+        font-size: 1rem;
+    }
+
+    .detail-text,
+    .detail-launch,
+    .d-e-container {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
+    .detail-text {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .details {
+        padding-right: 5rem;
+        padding-left: 5rem;
+    }
+
+    /* .detail-header {
+        padding-left: 3rem;
+        padding-right: 5rem;
+    }
+
+    .detail-container {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    } */
+
+    .detail-text {
+        padding-right: 15rem;
+        padding-left: 15rem;
+    }
+
+    .detail-launch,
+    .d-e-container {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+}
+
+
+

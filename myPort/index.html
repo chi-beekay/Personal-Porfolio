@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My personal website</title>
+
+    <!-- Favicon -->
+
+
+    <!-- Link-CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Swiper-CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.0/swiper-bundle.css">
+    <link rel="stylesheet" href="swipe.css">
+
+    <!-- unicons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+
+<body>
+    <!-- Header-Section -->
+    <header class="header" id="header">
+        <!-- Nav-Container -->
+        <nav class="nav container">
+            <!-- Logo-link -->
+            <a href="#" class="nav-logo">Beekay</a>
+
+            <!-- Nav-links -->
+            <div class="nav-menu" id="nav-menu">
+                <!-- List-Link-Container -->
+                <ul class="nav-list grid">
+                    <!-- List-Link -->
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link active-link">
+                            <i class="uil uil-house-user nav-icons"></i> Home
+                        </a>
+                    </li>
+                    <!-- List-Link -->
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">
+                            <i class="uil uil-user nav-icons"></i> About
+                        </a>
+                    </li>
+                    <!-- List-Link -->
+                    <li class="nav-item">
+                        <a href="#work" class="nav-link">
+                            <i class="uil uil-scenery nav-icons"></i> Work
+                        </a>
+                    </li>
+                    <!-- List-Link -->
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">
+                            <i class="uil uil-message nav-icons"></i> Contact
+                        </a>
+                    </li>
+                </ul>
+                <!-- Close-nav-BTN -->
+                <i class="uil uil-times nav-close" id="nav-close"></i>
+            </div>
+
+            <!-- Nav-Toggle-Container -->
+            <div class="nav-btns">
+                <!-- Theme change button -->
+                <i class="uil uil-moon change-theme" id="theme-button"></i>
+                <!-- Nav-Toggle-BTN -->
+                <div class="nav-toggle" id="nav-toggle">
+                    <!-- icons -->
+                    <i class="uil uil-apps"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main-Section -->
+    <main class="main">
+        <!-- home-section -->
+        <section class="home section" id="home">
+            <!-- Home-Container -->
+            <div class="home-container grid container">
+                <!-- Home-Content -->
+                <!-- <div class="home-content grid"> -->
+                <!-- Home-Social-Icons -->
+                <div class="home-social">
+                    <span class="home-social-follow">Follow Us</span>
+                    <div class="home-social-links">
+                        <!-- Github -->
+                        <a href="#" target="_blank" class="home-social-icons">
+                            <i class="uil uil-github-alt"></i>
+                        </a>
+                        <!-- Linkedin -->
+                        <a href="#" target="_blank" class="home-social-icons">
+                            <i class="uil uil-linkedin-alt"></i>
+                        </a>
+                        <!-- Twitter -->
+                        <a href="#" target="_blank" class="home-social-icons">
+                            <i class="uil uil-twitter-alt"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Home-Image -->
+                <img src="./img/img-4.png" alt="" class="home-img">
+
+                <!-- Home-Details -->
+                <div class="home-data">
+                    <!-- Home-Title -->
+                    <h1 class="home-title">Hi, I'm Beekay</h1>
+                    <!-- Home-Subtitle -->
+                    <h3 class="home-subtitle">Frontend Developer</h3>
+                    <!-- Home-Description -->
+                    <p class="home-description">I have experience in Frontend website development,</p>
+                    <!-- Contact-Button -->
+                    <a href="#contact" class="button button-flex">
+                        Download CV <i class="uil uil-import button-icon"></i>
+                    </a>
+                </div>
+                <!-- </div> -->
+                <!-- Home-Scroll -->
+                <div class="home-scroll">
+                    <!-- Home-Scroll-Button -->
+                    <a href="#about" class="home-scroll-button button-flex">
+                        <i class="uil uil-mouse-alt home-scroll-mouse"></i>
+                        <span class="home-scroll-name">Scroll down</span>
+                        <i class="uil uil-arrow-down home-scroll-arrow"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- About-Section -->
+    <section class="about section" id="about">
+        <!-- About-Title -->
+        <h2 class="section-title">Know Me Better</h2>
+        <!-- About-Subtitle -->
+        <span class="section-subtitle">My Introduction</span>
+
+        <!-- About-Details-Container -->
+        <div class="about-container container grid">
+            <!-- About-Details-Img -->
+            <img src="./img/img-1.png" alt="" class="about-img">
+
+            <div class="a-contain">
+                <!-- About-Data -->
+                <div class="about-data">
+                    <!-- Name-Description -->
+                    <h1 class="about-description">I'm Beekay</h1>
+                    <!-- Detailed-Description -->
+                    <p class="about-description-text">I am a Frontend Web Developer</p>
+                </div>
+
+                <!-- About-See-More-Button -->
+                <div class="about-button">
+                    <a href="about.html" class="button button-flex">
+                        See More <i class="uil uil-arrow-right button-icon"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work-Section -->
+    <section class="swiper-container" id="work">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slider -->
+
+            <!-- Slide -->
+            <div class="swiper-slide slide-0">
+                <div class="swiper-item item-0">
+                </div>
+                <span class="number">00</span>
+                <div class="slide-text slide-0">
+                    <h1>Works</h1>
+                    <p>View my Projects</p>
+                    <button class="btn"><a href="skills.html" style="color: white;">View More</a></button>
+                </div>
+            </div>
+            <!-- END Slide -->
+
+            <!-- Slide1 -->
+            <div class="swiper-slide slide-1">
+                <div class="swiper-item item-1"></div>
+                <span class="number">01</span>
+                <div class="slide-text slide-1">
+                    <h1>Beekay's Website</h1>
+                    <p>My personal website</p>
+                    <button class="btn"><a href="details.html" style="color: white;">Explore</a></button>
+                </div>
+            </div>
+            <!-- END Slide1 -->
+
+
+
+            <!-- Slide2 -->
+            <div class="swiper-slide slide-2">
+                <div class="swiper-item item-2">
+                </div>
+                <span class=" number">02</span>
+                <div class="slide-text slide-2">
+                    <h1>Increase Project</h1>
+                    <p>Banking API frontend</p>
+                    <button class=" btn"><a href="bank-details.html" style="color: white;">Explore</a></button>
+                </div>
+            </div>
+            <!-- END Slide2 -->
+
+            <!-- Slide3 -->
+            <!-- <div class="swiper-slide slide-3" style="background-color: #000000">
+                <div class="swiper-item" style="background-image: url(img/bg-3.jpg)">
+                </div>
+                <span class="number">03</span>
+                <div class="slide-text slide-3" style="background-color: #000000">
+                    <h1>Wake to fresh Breath</h1>
+                    <p>Summer Sales</p>
+                    <button class="btn">Explore</button>
+                </div>
+            </div> -->
+            <!-- END Slide3 -->
+
+
+
+
+            <!-- Slide4 -->
+            <!-- <div class="swiper-slide slide-4" style="background-color: #f7b0b8">
+                <div class="swiper-item" style="background-image: url(img/bg-4.jpg)">
+                </div>
+                <span class="number">04</span>
+                <div class="slide-text slide-4" style="background-color: #f7b0b8">
+                    <h1>Look Beautiful</h1>
+                    <p>Cosmetics Stores</p>
+                    <button class="btn">Explore</button>
+                </div>
+            </div> -->
+            <!-- END Slide4 -->
+            <!-- Slide5 -->
+            <!-- <div class="swiper-slide slide-5" style="background-color: #25a1b6">
+                <div class="swiper-item" style="background-image: url(img/bg-5.jpg)">
+                </div>
+                <span class="number">05</span>
+                <div class="slide-text slide-5" style="background-color: #25a1b6">
+                    <h1>Travel Diary 2021</h1>
+                    <p>Pre Booking Now</p>
+                    <button class="btn">Explore</button>
+                </div>
+            </div> -->
+            <!-- END Slide5 -->
+
+        </div>
+
+
+
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-arrows">
+            <div class="swiper-button-prev"><span></span></div>
+            <div class="swiper-button-next"><span></span></div>
+        </div>
+    </section>
+
+    <!-- Contact-Section -->
+    <section class="contact section" id="contact">
+        <!-- Contact-Title -->
+        <h2 class="section-title">Wanna Say Hi</h2>
+        <!-- Contact-Subtitle -->
+        <span class="section-subtitle">Sure you Can <i class="uil uil-thumbs-up"></i></span>
+
+        <!-- Contact-Details-Container -->
+        <div class="contact-container container grid">
+            <!-- Contact-Details-Img -->
+            <img src="./img/img-2.png" alt="" class="contact-img">
+
+            <!-- Contact-Data -->
+            <div class="contact-data">
+                <!---Description -->
+                <h1 class="contact-description">Get In Touch</h1>
+                <!-- Detailed-Description -->
+                <div class="contact-socials">
+                    <a href="mailto: mokwechibuke7@gmail.com" target="_blank"
+                        class="contact-social">evanschibuike@gmail.com</a>
+                    <!-- Linkedin -->
+                    <a href="#" target="_blank" class="contact-social">Linkedin</a>
+                </div>
+
+                <!-- Contact-See-More-Button -->
+                <div class="contact-social-links">
+                    <!-- Github -->
+                    <a href="https://github.com/chi-beekay" target="_blank" class="contact-social-icons">
+                        <i class="uil uil-github-alt"></i>
+                    </a>
+                    <!-- Whatsapp -->
+                    <a href="https://wa.me/message/EERZSS6AHRASG1" target="_blank" class="contact-social-icons">
+                        <i class="uil uil-whatsapp"></i>
+                    </a>
+                    <!-- Twitter -->
+                    <a href="https://twitter.com/qi_beekay" target="_blank" class="contact-social-icons">
+                        <i class="uil uil-twitter-alt"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer-Section -->
+    <footer class="footer">
+        <!-- Copyrights -->
+        <div class="footer-rights">
+            <p class="footer-copy">&#169; 2022 Beekay. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scroll-Up -->
+    <a href="" class="scroll-up" id="scroll-up">
+        <i class="uil uil-arrow-up scroll-up-icon"></i>
+    </a>
+
+    <!-- scroll reveal -->
+    <script src="js/scrollreveal.min.js"></script>
+    <!-- Swiper-Js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.0/swiper-bundle.js"></script>
+    <!-- Script-JS -->
+    <script src="js/app.js"></script>
+</body>
+
+</html>

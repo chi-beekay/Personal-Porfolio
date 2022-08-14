@@ -1,0 +1,189 @@
+
+
+.img-container {
+    position: relative;
+}
+
+.img-content {
+    position: relative;
+    overflow: hidden;
+    /* cursor: pointer; */
+}
+
+.img-content img {
+    width: 100%
+}
+.fig-caption {
+    width: 100%;
+    backface-visibility: hidden;
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    transition: transform 0.35s;
+    transform: translate3d(0,100%,0);
+}
+/* .img-content:hover .fig-caption { */
+    /* opacity: 1; */
+/* } */
+
+.caption-header {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem;
+    /* position: absolute; */
+    /* bottom: -2%; */
+    transition: transform 0.35s;
+    transform: translate3d(0,200%,0);
+}
+
+.caption-header h2 {
+    font-size: 1.25rem;
+    color: #16271F;
+}
+
+
+.caption-icon {
+    font-size: 20px;
+    color: #16271F;
+}
+
+.caption-icon:hover {
+    color: #28493a;
+}
+
+.caption-text {
+    position: absolute;
+    /* width: 100%; */
+    padding: 2rem;
+    bottom: 4rem;
+    font-size: .7rem;
+    /* left: 50%; */
+    /* margin: 2rem; */
+    /* transform: translate(-9rem, -9rem); */
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    opacity: 0;
+    transition: opacity 0.35s;
+    backface-visibility: hidden;
+}
+
+.img-content:hover .fig-caption,
+.img-content:hover .caption-header,
+.img-content:hover .caption-text {
+    transform: translate3d(0,0,0);
+    opacity: 1;
+    transition: transform 0.35s;
+}
+
+.img-content:hover .caption-header {
+    transition-delay: 00.05s;
+}
+
+@media screen and (max-width: 270px) {
+    .caption-header h2 {
+        font-size: 1rem;
+    }
+    
+    .caption-icon {
+        font-size: 15px;
+    }
+
+    .caption-text {
+        padding: 1rem;
+        bottom: 3rem;
+        font-size: .7rem;
+    }
+    
+}
+
+@media screen and (min-width: 400px) {
+    .caption-text {
+        padding: 1rem;
+        bottom: 3.5rem;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 440px) {
+    .caption-text {
+        padding: 1.5rem;
+        bottom: 4.2rem;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 480px){
+    .caption-header h2 {
+        font-size: 1.5rem;
+    }
+    
+    .caption-icon {
+        font-size: 20px;
+    }
+
+    .caption-text {
+        bottom: 5rem;
+    }
+    
+}
+
+@media screen and (min-width: 520px) {
+    .skills {
+    margin-top: 3rem;
+}
+    .caption-header {
+        padding: 1rem;
+    }
+    .caption-header h2 {
+        font-size: 2rem;
+    }
+
+    .caption-icon {
+        font-size: 25px;
+    }
+    .caption-text {
+        font-size: 1.5rem;
+        bottom: 6rem;
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 800px ) {
+    body {
+        margin: 0;
+    }
+    .skills {
+        /* margin-left: auto; */
+        /* margin-right: auto; */
+        padding: 1rem;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    body {
+        margin: 0;
+    }
+    .skills {
+        padding: 0;
+        margin-top: 6rem;
+    }
+    .img-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .caption-text {
+        font-size: 1.2rem;
+        bottom: 6rem;
+    }
+
+    .caption-header h2 {
+        font-size: 1.5rem;
+    }
+
+    .caption-icon {
+        font-size: 25px;
+    }
+}
+
